@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Sky Forms</title>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/sky-form.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/sky-forms.css">
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-forms-ie8.css">
+		<![endif]-->
+		
+		<!--[if lt IE 10]>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/jquery.placeholder.min.js"></script>
+		<![endif]-->		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/sky-forms-ie8.js"></script>
+		<![endif]-->
+	</head>
+	<body class="bg-cyan">
+	<header class="header" role="banner">
+    <nav>
+		
+        <ul>
+		<a href="index.html" style="hover:#0000F"><img src="log.png" style="margin-left: -10%;"></a>
+            <li class="active"><a href="index.html">Home</a>
+            </li>
+            <li><a href="Doctor_Redirect.html">Doctors</a>
+            </li>
+            <li><a href="Donor_Redirect.html">Donors</a>
+            </li>
+            <li><a href="About.html">About Us</a>
+            </li>
+        </ul>
+    </nav>
+</header> 
+		<div class="body body-s">
+		
+			<form action="dlogin.php" method="post" class="sky-form">
+				<header>Login form</header>
+				
+				<fieldset>					
+					<section>
+						<div class="row">
+							<label class="label col col-4">E-mail</label>
+							<div class="col col-8">
+								<label class="input">
+									<i class="icon-append icon-user"></i>
+									<input type="email" name="email">
+								</label>
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<div class="row">
+							<label class="label col col-4">Password</label>
+							<div class="col col-8">
+								<label class="input">
+									<i class="icon-append icon-lock"></i>
+									<input type="password" name="pass">
+								</label>
+								<div class="note"><a href="#">Forgot password?</a></div>
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<div class="row">
+							<div class="col col-4"></div>
+							<div class="col col-8">
+								<label class="checkbox"><input type="checkbox" name="checkbox-inline" checked><i></i>Keep me logged in</label>
+							</div>
+						</div>
+					</section>
+				</fieldset>
+				<footer>
+					<button type="submit" class="button" onclick="">Log in</button>
+					<a href="Donor_Registration.html" class="button button-secondary">Register</a>
+				</footer>
+			</form>
+			
+		</div>
+	</body>
+</html>

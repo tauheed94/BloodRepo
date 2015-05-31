@@ -1,0 +1,229 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Doctor's Registration</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/sky-forms.css">
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-forms-ie8.css">
+		<![endif]-->
+		
+		<!--[if lt IE 10]>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/jquery.placeholder.min.js"></script>
+		<![endif]-->		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/sky-forms-ie8.js"></script>
+		<![endif]-->
+	</head>
+	<body class="bg-cyan">
+<!--	<header class="header" role="banner">
+    <nav>
+		
+        <ul>
+		<a href="index.html" style="hover:#0000F"><img src="log.png" style="margin-left: -10%;"></a>
+            <li class="active"><a href="index.html">Home</a>
+            </li>
+            <li><a href="Doctor_Redirect.html">Doctors</a>
+            </li>
+            <li><a href="Donor_Redirect.html">Donors</a>
+            </li>
+            <li><a href="About.html">About Us</a>
+            </li>
+        </ul>
+    </nav>
+</header> -->
+		<div class="body body-s">
+		
+			<form action="doctor.php" method="post" class="sky-form">
+				<header>Registration form</header>
+				
+				<fieldset>					
+					<section>
+						<label class="input">
+							<i class="icon-append icon-user"></i>
+							<input type="text" placeholder="Username" name="user">
+							<b class="tooltip tooltip-bottom-right">Only English characters and numbers</b>
+						</label>
+					</section>
+					
+					<section>
+						<label class="input">
+							<i class="icon-append icon-envelope-alt"></i>
+							<input type="text" placeholder="Email address" name="email">
+							<b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+						</label>
+					</section>
+					
+					<section>
+						<label class="input">
+							<i class="icon-append icon-lock"></i>
+							<input type="password" placeholder="Password" name="pass">
+							<b class="tooltip tooltip-bottom-right">Only English characters and numbers</b>
+						</label>
+					</section>
+					
+					<section>
+						<label class="input">
+							<i class="icon-append icon-lock"></i>
+							<input type="password" placeholder="Confirm password" name="cpass">
+							<b class="tooltip tooltip-bottom-right">Only latin characters and numbers</b>
+						</label>
+					</section>
+				</fieldset>
+					
+				<fieldset>
+					<div class="row">
+						<section class="select">
+							<label class="input">
+							 <input type="text" placeholder="First name" name="fname">
+							</label>
+						</section>
+						<section class="select">
+							<label class="input">
+								<input type="text" placeholder="Last name" name="lname">
+							</label>
+						</section>
+						<section>
+						<label class="select" name="gender">
+							<select>
+								<option value="0" selected disabled>Gender</option>
+								<option value="1">Male</option>
+								<option value="2">Female</option>
+								<option value="3">Other</option>
+							</select>
+							<i></i>
+						</label>
+					</section>
+						
+						<section class="select">
+							<label class="select">
+							<select name="spec">
+								<option value="0">Specialization</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Hematologist/Oncologist</option>
+								<option value="3">Internal Medicine Physician</option>
+								<option value="3">Nephrologist</option>
+								<option value="4">Neurologist</option>
+								<option value="5">Neurosurgeon</option>
+								<option value="6">Pathologist</option>
+							</select>
+	</section>
+						<section>
+						<label class="select">
+							<select name="hosp">
+								<option value="0" selected disabled>Hospital</option>
+								<option value="1">Apollo</option>
+								<option value="2">Care</option>
+								<option value="3">Yashoda</option>
+								<option value="4">Kamineni</option>
+								<option value="5">Apple Hospitals</option>
+								<option value="6">Princess Esra</option>
+								
+							</select>
+
+
+						<i></i>
+						</label>
+						</section>						
+						<section class="select">
+							<label class="input">
+								<input type="numbers" placeholder="Mobile Number" name="mno">
+							</label>
+						</section>
+						<section>
+						<label class="select" name="cnt">
+							<select>
+								<option value="0" selected disabled>Country</option>
+								<option value="1">India</option>
+								
+							</select>
+							<i></i>
+						</label>
+					</section>
+					
+						
+						
+						<section>
+						<label class="select">
+							<select name="state">
+								<option value="0" selected disabled>State</option>
+								<option value="Andhra Pradesh">Andhra Pradesh</option>
+	<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+	<option value="Assam">Assam</option>
+	<option value="Bihar">Bihar</option>
+	<option value="Chhattisgarh">Chhattisgarh</option>
+	<option value="Goa">Goa</option>
+	<option value="Gujarat">Gujarat</option>
+	<option value="Haryana">Haryana</option>
+	<option value="Himachal Pradesh">Himachal Pradesh</option>
+	<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+	<option value="Jharkhand">Jharkhand</option>
+	<option value="Karnataka">Karnataka</option>
+	<option value="Kerala">Kerala</option>
+	<option value="Madhya Pradesh">Madhya Pradesh</option>
+	<option value="Maharashtra">Maharashtra</option>
+	<option value="Manipur">Manipur</option>
+	<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+							</select>
+							<i></i>
+						</label>
+					</section>
+					<section class="select">
+					 <label class="select">
+					  <select name="dis">
+						<option value="-1" selected>District</option>
+						<option value="Anantapur">Hyderabad</option>
+						<option value="Chittoor">Secunderabad</option>
+						<option value="East Godavari">East Godavari</option>
+						<option value="Guntur">Guntur</option>
+						<option value="Kadapa">Kadapa</option>
+						<option value="Krishna">Krishna</option>
+						<option value="Kurnool">Kurnoolr</option>
+						<option value="Prakasam">Prakasam</option>
+						<option value="Nellore">Nellore</option>
+						<option value="Srikakulam">Srikakulam</option>
+						<option value="Visakhapatnam">Visakhapatnam</option>
+						<option value="Vizianagaram">Vizianagaram</option>
+						<option value="West Godavari">West Godavari</option>
+						</select>
+						</section>
+						<section class="select">
+							<label class="input">
+								<input type="numbers" placeholder="Pin Code" name="pin">
+							</label>
+						</section>
+					</div>
+					
+					
+					
+					<section>
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>I agree to the Terms of Service</label>
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>I want to receive news and  special offers</label>
+					</section>
+				</fieldset>
+				<footer>
+					<button type="submit" class="button">Submit</button>
+				</footer>
+			</form>
+			
+		</div>
+	</body>
+</html>
